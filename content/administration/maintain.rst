@@ -15,4 +15,5 @@ Maintain
     maintain/hosting_changes
     maintain/odoo_online
     maintain/on_premise
+    maintain/neutralized_databases
     maintain/supported_versions
