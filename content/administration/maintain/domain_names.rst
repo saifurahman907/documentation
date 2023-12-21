@@ -2,139 +2,144 @@
 Domain names
 ============
 
-A **domain name** works as an address for your website. It makes the Internet much more accessible
-as it allows users to type a meaningful web address, such as ``www.odoo.com``, rather than its
-server's IP address with a series of numbers.
+A **domain name** is a unique internet address that identifies a specific website. It allows website
+access by translating numeric IP addresses into human-readable text-based names.
 
-You can use a custom domain name to access your Odoo database and websites:
+**Odoo Online** and **Odoo.sh** databases, including their websites, use by default a **subdomain**
+of odoo.com for both the URL and the emails (e.g., mycompany.odoo.com). A subdomain is a
+domain that is a part of another domain. It often refers to the part *before* the main domain name.
+Traditionally, most websites use the `www.` subdomain, but any string of letters can be used.
+Subdomains can be used to direct visitors to websites other than your main website or specific pages.
+
+You can use a **custom domain name** to access your Odoo database and websites:
 
 - By :ref:`registering a free domain name with Odoo <domain-name/odoo-register>` (for Odoo Online
-  databases)
-- By :ref:`configuring a custom domain that you already own <domain-name/existing>`.
+  databases);
+- By :ref:`configuring a custom domain that is already owned <domain-name/existing>`.
 
-.. note::
-   Odoo Online and Odoo.sh databases, including their websites, use by default a subdomain of
-   ``odoo.com`` for both the URL and the emails (e.g., ``https://example.odoo.com``).
-
-.. important::
-   Odoo offers a :ref:`free custom domain name <domain-name/odoo-register>` to all Odoo Online
-   databases for one year. Visitors can then access your website with an address such as
-   ``www.example.com`` rather than the default ``example.odoo.com``.
+.. tip::
+   - Odoo offers a :ref:`free custom domain name <domain-name/odoo-register>` to all Odoo Online
+     databases for one year. A good domain name is crucial for a brand. To create an effective
+     domain name, keep it simple, short, memorable, and easy to spell.
 
 .. seealso::
    - `Odoo Tutorials: Register a Free Domain Name
      <https://www.odoo.com/slides/slide/register-a-free-domain-name-1663>`_
    - `Odoo Quick Tips: Get a free domain name! <https://www.youtube.com/watch?v=eAfgeNOHLP4>`_
 
-.. _domain-name/about:
-
-About domain names
-==================
-
-Having a **good domain name** is as important to your branding as the name of your business or
-organization as it is the first thing your visitors will notice. We recommend you keep them *simple,
-short, easy to remember and spell*.
-
-A **subdomain** is a domain that is a part of another domain. It often refers to the additional part
-that comes before the main domain name. Traditionally, most websites use the ``www.`` subdomain,
-but any string of letters can be used as well. You can use subdomains to direct your visitors to
-other websites than your main website or to specific pages (e.g., ``experience.odoo.com`` points to
-a specific page.)
-
-All domain names are referenced in the **Domain Name System**, or **DNS**, which works as a giant
-directory for the Internet. There are many DNS servers, so any modification to the DNS can take up
-to 72 hours to propagate worldwide on all servers.
-
-.. _domain-name/indexing:
-
-Indexing of domain names by search engines
-------------------------------------------
-
-Search engines, such as Google and Bing, rely on web crawlers (:dfn:`robots that explore and analyze
-the web`) to index all websites and their related domain names. These crawlers discover new URLs
-thanks to links on known web pages. As a result, search engines should index domain names
-automatically after a while, as long as their URLs are mentioned elsewhere on the Internet.
-
-Improving the appearance and positioning of web pages on search engines is a practice named "Search
-Engine Optimization" (SEO).
-
-.. tip::
-   Adding relevant content, optimizing metadata, and building high-quality backlinks can all help
-   improve a website's search engine visibility.
-
-Some search engines provide tools for web admins, such as
-`Google Search Console <https://search.google.com/search-console>`_ and
-`Bing Webmaster Tools <https://www.bing.com/webmasters>`_, to help you analyze and improve your
-page ranking. To use these services, you must prove that you are the owner of your domain name. One
-way to verify the ownership of your domain name is by adding a DNS record. You can do this for
-:ref:`domain names registered with Odoo <domain-name/odoo-manage>` and for domain names managed by
-other providers.
-
-.. seealso::
-   - :doc:`/applications/websites/website/pages/seo`
-   - `Google Search Console Help - Verify your site ownership <https://support.google.com/webmasters/answer/9008080>`_
-   - `Bing Webmaster Tools - Add and Verify site <https://www.bing.com/webmasters/help/add-and-verify-site-12184f8b>`_
-
 .. _domain-name/odoo-register:
 
-Register a free domain name with Odoo
-=====================================
+Register free domain name with Odoo
+===================================
 
-You can register a domain name for your Odoo Online database directly from Odoo Website or your
-database manager.
-
-.. important::
-   - Your domain name is **free for one year** if you register it with Odoo!
-   - The domain name is registered with `Gandi <https://www.gandi.net/>`_, the domain name
-     registrar.
-   - You are the owner of the domain name and can use it for other purposes.
-   - Odoo manages payment and technical support for you.
-   - This offer doesn't include any mailbox. However, you can :ref:`configure your MX records
-     <domain-name/odoo-manage>` to use your own email server or solution such as Google Workspace.
-
-To do so, go to :menuselection:`Website --> Domain Name`. Alternatively, open your `database manager
-<https://www.odoo.com/my/databases>`_, click on the :guilabel:`settings` button next to your
-database, then on :guilabel:`Domain names`.
-
-.. image:: domain_names/register-menu.png
-   :align: center
-   :alt: Clicking on Domain Names from an Odoo website
-
-Search for the domain name of your choice to check its availability, then select the one you want to
-register for your website.
-
-.. image:: domain_names/register-search.png
-   :align: center
-   :alt: The search of the domain name example.com shows which associated domains are available.
-
-Next, fill in the form with your information to become the domain name owner.
-
-Your domain name is directly linked to your database, but you still have to :ref:`map your domain
-name with your website <domain-name/website-map>`.
+When creating a site on Odoo, it's possible to get free domain registration for the first year.
+After this period, Odoo continues to manage the domain in partnership with **Gandi**, the domain
+name registrar, and users are charged at the renewal rates, as indicated on `their site (renewal column)
+<https://www.gandi.net/en/domain>`_. Odoo then sends a renewal quotation every year to the email
+address mentioned as the owner a few weeks before the expiration date of the domain. The domain is
+renewed automatically when the quotation is confirmed.
 
 .. note::
-   - Free domain names are also available for free Odoo Online databases (if you installed one app
-     only, for example). In this case, Odoo reviews your request and your website to avoid abuse.
-     This process can take several days due to the success of the offer.
-   - This is not available for Odoo.sh databases yet.
+   - A one-year free domain name is also available for free Odoo Online databases (if you installed
+     one app only, for example). In this case, Odoo reviews your request and website to avoid abuse.
+     This process can take several days due to the high number of requests.
+   - This offer is currently not available for Odoo.sh databases.
+
+**To register a free domain name** with Odoo, click the profile icon on the dashboard, then click
+:guilabel:`My Databases`.
+
+.. image:: domain_names/mydatabases.png
+
+Click the :guilabel:`⚙️ (gear)` icon next to the database name, and select :guilabel:`Domain Names`.
+
+.. image:: domain_names/domain-names.png
+
+Search for the desired domain name to check its availability.
+
+.. image:: domain_names/register-a-domain-name.png
+
+Select the desired domain name to use for your website, fill in the :guilabel:`Domain Owner` form
+with the necessary information, and click :guilabel:`Register`. The chosen domain name is directly
+linked to the database, but users still have to :ref:`map the domain name with the website
+<domain-name/db-map>`.
+
+.. image:: domain_names/domain-owner.png
+
+.. Important::
+   After registering a domain, a verification email from noreply@domainnameverification.net is sent
+   to the provided email address. Click the link in the email to verify the email address.
+   **Verification is crucial**. If not done:
+
+     - In most cases, the domain stops working after two weeks until the email is verified.
+     - In some cases, the domain *might* keep working, but the user does not receive a renewal
+       notice.
 
 .. _domain-name/odoo-manage:
 
-Manage your domain name registered with Odoo
---------------------------------------------
+Manage registered domain name with Odoo
+---------------------------------------
 
-To manage the DNS records of your domain name registered with Odoo or to visualize the contacts
-associated with it, open your `database manager <https://www.odoo.com/my/databases>`_, click on the
-:guilabel:`settings` button next to your database, on :guilabel:`Domain names`, and then on
-:guilabel:`Contacts` or :guilabel:`DNS`.
+Domain names are referenced in the **Domain Name System**, or DNS, an Internet directory.
+
+To visualize the cContacts associated with your domain names, or to manage its **DNS** records, open
+the `database manager <https://www.odoo.com/my/databases>`_, click the :guilabel:`⚙️ (gear)` icon
+next to the database name, then :guilabel:`Domain names` and :guilabel:`Contacts`, or
+:guilabel:`DNS`.
 
 .. image:: domain_names/manage.png
-   :align: center
    :alt: Management of the domain names linked to an Odoo database
 
+The :guilabel:`Contacts` column displays the different types of contacts registered for the domain
+name. The user appears as the :guilabel:`Domain Owner`, and Odoo is automatically set as
+:guilabel:`Administrative`, :guilabel:`Technical`, and :guilabel:`Billing` contact.
+
+The :guilabel:`DNS` column displays the DNS zone of the domain names. Users can see :guilabel:`Type`
+:guilabel:`A` records, and create/edit :guilabel:`CNAME`, :guilabel:`MX`, and :guilabel:`TXT`
+records.
+
+- :guilabel:`A`: indicates the IP address of a given domain. It is automatically created to manage
+  the redirection of your naked domain and **cannot** be edited or deleted.
+- :guilabel:`CNAME`: is created by default and maps your subdomain to the database. If users rename
+  the database, the CNAME **must** be renamed.
+- :guilabel:`MX`: the purpose of an MX record is to instruct servers on where to deliver emails. You
+  can retrieve your MX value from the preferred email service (e.g., `Google Workspace <https://support.google.com/a/answer/174125?hl=en>`_,
+  `Outlook <https://learn.microsoft.com/en-us/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide>`_,etc.).
+- :guilabel:`TXT`: Odoo allows users to create a TXT record for different purposes (e.g., to verify
+  the ownership of the domain name.
+
+Any modification to the DNS can take up to **72 hours** to propagate worldwide on all servers.
+
 .. note::
-   Please `submit a support ticket <https://www.odoo.com/help>`_ if you need further assistance to
+   You can `submit a support ticket <https://www.odoo.com/help>`_ if you need further assistance to
    manage your domain name.
+
+Mailbox management
+------------------
+
+The one-year free domain name offer does **not** include any mailbox. To link the domain name with
+the mailbox, there are different options:
+
+**Option 1**
+
+Create a sub-domain (e.g., `subdomain`.example.com) to use as an alias domain for the database. This
+allows users to create records in Odoo from emails received on the @ `subdomain`.example.com
+aliases. To accomplish this, navigate to the portal, click the :guilabel:`⚙️ (gear)` icon,
+:guilabel:`Domain Names`, :guilabel:`DNS`, and click :guilabel:`ADD DNS RECORD`, then choose
+:guilabel:`CNAME`.
+
+Next, enter the email in the :guilabel:`Host` field, along with the dbname.odoo.com as the
+:guilabel:`Value`. Then, add mail.example.com as "own domain" in the database domains. The
+`mail.example.com` alias can then be used as an alias domain rather than dbname.odoo.com.
+
+**Option 2**
+
+You can configure your MX records to use your preferred email server, e.g.,Google Workspace. To do
+so, create the required DNS records to use your domain name. To manage DNS records, go to your Odoo
+portal, click :guilabel:`My Databases`, then click the gear icon, :guilabel:`Domain names`, and
+:guilabel:`DNS`.
+
+.. seealso::
+   :ref:`Send and receive emails in Odoo with an email server <communication/emails_servers>`
 
 .. _domain-name/existing:
 
@@ -235,9 +240,9 @@ Map your domain name with your Odoo database
 
    .. group-tab:: Odoo Online
 
-      Open your `database manager <https://www.odoo.com/my/databases>`_, click on the
-      :guilabel:`settings` button next to your database, on :guilabel:`Domain names`, and then on
-      :guilabel:`Use my own domain` at the bottom of the right column.
+      From the Odoo account, click the profile icon, and navigate to :guilabel:`My Databases`. Then,
+      click on the :guilabel:`⚙️ (gear)` icon, next to the database name, followed by
+      :guilabel:`Domain names` and :guilabel:`Use my own domain`.
 
       Type the domain name you want to add to this database, then click on :guilabel:`Verify` to
       check if the CNAME record is correctly configured. Once done, click on :guilabel:`I confirm,
@@ -289,6 +294,10 @@ Odoo generates a separate SSL certificate for each domain :ref:`mapped in the da
    - Several attempts to validate your certificate are made during the five days following the
      moment you add your domain name in your database's settings.
    - If you already use another service, you can keep using it or simply change for Odoo.
+
+.. important::
+   No SSL certificate is generated for :ref:`naked domains <domain-name/naked-domain>`. Users can
+   redirect the naked domain to the subdomain in the domain name provider.
 
 .. _domain-name/web-base-url:
 
@@ -364,3 +373,30 @@ In the :guilabel:`Domain` field, fill in the web address of your website (e.g.,
 
 .. seealso::
   - :doc:`/applications/general/email_communication/email_servers`
+
+.. _domain-name/indexing:
+
+Indexing domain names by search engines
+=======================================
+
+Search engines, like Google and Bing, rely on web crawlers (:dfn:`robots that explore and analyze
+the web`) to discover and index websites, and their related domain names. These crawlers find new
+website links through existing pages, enabling search engines to automatically index domain names
+when their URLs are mentioned elsewhere online.
+
+Improving the appearance and positioning of web pages on search engines is a practice called
+:ref:`Search Engine Optimization <pages/seo>`.
+
+Some search engines provide tools for web admins, such as
+`Google Search Console <https://search.google.com/search-console>`_ and
+`Bing Webmaster Tools <https://www.bing.com/webmasters>`_, to help users analyze and improve page
+ranking. Users **must** prove themeselves as the owner of the domain name to use these services. One
+way to verify the ownership of the domain name is by adding a DNS record (users can do this for
+:ref:`domain names registered with Odoo <domain-name/odoo-manage>` and for domain names managed by
+other providers) or by using the :guilabel:`Console Google Search` available in the website's
+configuration.
+
+.. Important::
+   You cannot remove the subdomain dbname.odoo.com if Odoo hosts you. However, the subdomain
+   dbname.odoo.com exploration by search engines is blocked when you add a custom domain name to the
+   configuration of your website.

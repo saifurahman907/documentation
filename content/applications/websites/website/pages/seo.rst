@@ -1,5 +1,7 @@
+.. _pages/seo:
+
 ================================
-Search Engine Optimisation (SEO)
+Search Engine Optimization (SEO)
 ================================
 
 Search Engine Optimization (SEO) is a set of good practices to optimize
