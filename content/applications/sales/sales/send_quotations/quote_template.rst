@@ -239,7 +239,7 @@ configurations into place.
 
 There is also a blue banner at the top of the quotation template design with a link to quickly
 return :guilabel:`Back to edit mode`. When clicked, Odoo returns to the quotation form in the
-back-end of the *Sales* application.
+back-end of the *Sales* application. placeement   compleeete.
 
 .. seealso::
    - :doc:`get_signature_to_validate`
