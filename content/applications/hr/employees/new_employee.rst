@@ -12,19 +12,20 @@ appears. Fill out the required information and any additional details.
 
 .. note::
    The current company phone number and name is populated in the :guilabel:`Work Phone` and
-   :guilabel:`Company` fields.
+   :guilabel:`Company` fields. If the *Appraisals* application is installed, the :guilabel:`Next
+   Appraisal Date` field is populated with a date six (6) months from today's date.
 
 General information
 ===================
 
-The employee form automatically saves as data is entered, but the save manually icon (a could with
+The employee form automatically saves as data is entered, but the save manually icon (a cloud with
 an up arrow inside it) may be clicked at any time to manually save the form.
 
 Required fields
 ---------------
 
-- :guilabel:`Name`: Enter the employee's name.
-- :guilabel:`Company`: Select the company from the drop-down menu that the new employee is hired by,
+- :guilabel:`Name`: enter the employee's name.
+- :guilabel:`Company`: select the company from the drop-down menu that the new employee is hired by,
   or create a new company by typing the name in the field.
 
 .. image:: new_employee/employee-new.png
@@ -34,9 +35,9 @@ Required fields
 Optional fields
 ---------------
 
-- :guilabel:`Photo`: In the top right image box of the employee form, click on the :guilabel:`✏️
+- :guilabel:`Photo`: in the top right image box of the employee form, click on the :guilabel:`✏️
   (pencil)` edit icon to select a photo to upload.
-- :guilabel:`Job Position`: Enter the employee's job position title under their name, or select the
+- :guilabel:`Job Position`: enter the employee's job position title under their name, or select the
   job position from the :guilabel:`Job Position` drop-down menu to have this field auto-populate.
   The :guilabel:`Job Position` field under the employee name can be modified and does not need to
   match the selection made in the :guilabel:`Job Position` drop-down.
@@ -57,22 +58,22 @@ Optional fields
         :align: center
         :alt: Both job position fields entered but with different information.
 
-- Tags: Click on a tag in the drop-down menu to add any tags applicable to the employee. Any tag can
+- Tags: click on a tag in the drop-down menu to add any tags applicable to the employee. Any tag can
   be created in this field by typing it in. Once created, the new tag is available for all employee
   records. There is no limit to the amount of tags that can be added.
 - Work Contact Information: Enter the employee's :guilabel:`Work Mobile`, :guilabel:`Work Phone`,
   :guilabel:`Work Email`, and/or :guilabel:`Company` name.
-- :guilabel:`Department`: Select the employee's department from the drop-down menu.
-- :guilabel:`Job Position`: Select the employee's job position from the drop-down menu. Once a
+- :guilabel:`Department`: select the employee's department from the drop-down menu.
+- :guilabel:`Job Position`: select the employee's job position from the drop-down menu. Once a
   selection is made, the :guilabel:`Job Position` field beneath the employee's name automatically
   updates to reflect the currently selected job position. These positions are from the
   :doc:`Recruitment <../../hr/recruitment/new_job/>` application, and reflect the currently \
   configured job positions.
-- :guilabel:`Manager`: Select the employee's manager from the drop-down menu.
-- :guilabel:`Coach`: Select the employee's coach from the drop-down menu.
-- :guilabel:`Next Appraisal Date`: This date automatically populates with a date that is computed
-  according to the settings configured in the *Appraisals* application. This date can be modified
-  using the calendar selector.
+- :guilabel:`Manager`: select the employee's manager from the drop-down menu.
+- :guilabel:`Coach`: select the employee's coach from the drop-down menu.
+- :guilabel:`Next Appraisal Date`: this field is only visible if the *Appraisals* application is
+  installed. The date automatically populates with a date that is computed according to the settings
+  configured in the *Appraisals* application. This date can be modified using the calendar selector.
 
 .. note::
    After a :guilabel:`Manager` is selected, if the :guilabel:`Coach` field is blank, the selected
@@ -103,17 +104,19 @@ following information for each entry.
    :align: center
    :alt: A resumé entry form with all the information populated.
 
-- :guilabel:`Title`: Type in the title of the previous work experience.
-- :guilabel:`Type`: From the drop-down menu, select either :guilabel:`Experience`,
+- :guilabel:`Title`: type in the title of the previous work experience.
+- :guilabel:`Employee`: select the employee from the drop-down menu.
+- :guilabel:`Type`: from the drop-down menu, select either :guilabel:`Experience`,
   :guilabel:`Education`, :guilabel:`Side Projects`, :guilabel:`Internal Certification`,
   :guilabel:`Completed Internal Training`, or type in a new entry, then click :guilabel:`Create
   "(new entry)"`.
-- :guilabel:`Display Type`: Select either :guilabel:`Classic`, :guilabel:`Certification`, or
-  :guilabel:`Course` from the drop-down menu.
-- :guilabel:`Date Start` and :guilabel:`Date End`: Enter the start and end dates for the work
-  experience. To select a date, use the :guilabel:`< (left)` and :guilabel:`> (right)` arrow icons
-  to scroll to the desired month, then click on the day to select it.
-- :guilabel:`Description`: Enter any relevant details in the field.
+- :guilabel:`Display Type`: Using the drop-down menu, select either :guilabel:`Classic` for typical
+  work experience, :guilabel:`Certification` if a certificate was earned for the experience, or
+  :guilabel:`Course` if the experience was a class that did not provide any certification.
+- :guilabel:`Duration`: enter the start and end dates for the work experience. To select a date, use
+  the :guilabel:`< (left)` and :guilabel:`> (right)` arrow icons to scroll to the desired month,
+  then click on the day to select it.
+- :guilabel:`Description`: enter any relevant details in the field.
 
 Once all the information is entered, click the :guilabel:`Save & Close` button if there is only one
 entry to add, or click the :guilabel:`Save & New` button to save the current entry and create
@@ -121,7 +124,7 @@ another resumé line.
 
 .. note::
    After the new employee form is saved, the current position and company is automatically added to
-   the :guilabel:`Resumé` tab, with the end date listed as *current*.
+   the :guilabel:`Resumé` tab, with the end date listed as `current`.
 
 Skills
 ~~~~~~
@@ -139,7 +142,7 @@ the following information for each skill.
 - :guilabel:`Skill Type`: Select a :ref:`skill type <employees/skill-types>` by clicking the radio
   button next to the skill type.
 - :guilabel:`Skill`: After selecting a :guilabel:`Skill Type`, the corresponding skills associated
-  with that selected :guilabel:`Skill Type` appear in a drop-down menu. For example, selecting
+  with that selected :guilabel:`Skill Type` appears in a drop-down menu. For example, selecting
   :guilabel:`Language` as the :guilabel:`Skill Type` presents a variety of languages to select from
   under the :guilabel:`Skills` field. Select the appropriate pre-configured skill, or type in a new
   skill, then click :guilabel:`Create "(new skill)"`.
@@ -168,18 +171,22 @@ configured skill types and create new skill types. Click :guilabel:`New` and a n
 Type` form appears. Fill out all the details for the new skill type. Repeat this for all the skill
 types needed.
 
-- :guilabel:`Skill Type`: Enter the name of the skill type. This will act as the parent category
+- :guilabel:`Skill Type`: enter the name of the skill type. This will act as the parent category
   for more specific skills and should be generic.
-- :guilabel:`Skills`: Click :guilabel:`Add a line` and enter the name for the new skill, then repeat
+- :guilabel:`Skills`: click :guilabel:`Add a line` and enter the name for the new skill, then repeat
   for all other needed skills.
-- :guilabel:`Levels`:  Click :guilabel:`Add a line` and a :guilabel:`Create Levels` form appears.
-  Enter the name of the level, and assign a number for the :guilabel:`Progress` percentage (0-100)
-  for that level. Click :guilabel:`Save & New` to save the entry and add another level, or click
-  :guilabel:`Save & Close` to save the level and close the form. Once all the levels are entered,
-  click the :guilabel:`Save manually` icon at the top of the screen. Next, select a default level
-  for this skill type. Click :guilabel:`Set Default` on the line to be the default value. This is
-  typically the lowest level, but any level can be set as the default. A check mark appears in the
-  :guilabel:`Default Level` column, indicating which level is the default.
+- :guilabel:`Levels`: click :guilabel:`Add a line` and enter the name of the level. Next, click into
+  the :guilabel:`Progress` field and enter a percentage number (0-100) for that level. Repeat for
+  all other needed levels.
+- :guilabel:`Default Level`: click the toggle on the level line to set that level as the the
+  default. This is typically the lowest level, but any level can be set as the default. The toggle
+  turns green, indicating it is the default level for the skill. Only one level can be set as the
+  default.
+
+Once the form is completely filled out, click the :guilabel:`Save manually` icon at the top of the
+screen. Once saved, the :guilabel:`Levels` rearrange in descending order, with the highest level at
+the top, and the lowest at the bottom, regardless of the default level and the order they were
+entered.
 
   .. example::
      To add a math skill set, enter `Math` in the :guilabel:`Name` field. Next, in the
@@ -198,49 +205,63 @@ Work Information tab
 
 The Work Information tab is where the employee's specific job related information is housed. Their
 working schedule, various roles, who approves their specific requests (time off, timesheets, and
-expenses), and specific work location details are listed here. Click on the :guilabel:`Work
-Information` tab to access this section, and enter the following information for the new employee.
+expenses), their remote work schedule, and specific work location details are listed here. Click on
+the :guilabel:`Work Information` tab to access this section, and enter the following information for
+the new employee.
 
-- :guilabel:`Location`: Select the :guilabel:`Work Address` from the drop-down menu. To modify the
+- :guilabel:`Location`: select the :guilabel:`Work Address` from the drop-down menu. To modify the
   address, hover over the first line (if there are multiple lines) of the address to reveal an
   :guilabel:`Internal Link` arrow. Click the :guilabel:`Internal Link` arrow to open up the company
   form, and make any edits. Use the breadcrumb menu to navigate back to the new employee form when
   done. If a new work address is needed, add the address by typing it in the field, then click
   :guilabel:`Create (new address)` to add the address, or :guilabel:`Create and edit...` to add the
   new address and edit the address form.
-- :guilabel:`Approvers`: In order to see this section, the user must have either
+- :guilabel:`Approvers`: in order to see this section, the user must have either
   :guilabel:`Administrator` or :guilabel:`Officer: Manage all employees` rights set for the
   :guilabel:`Employees` application. Using the drop-down menus, select the users responsible for
-  approving :guilabel:`Expenses`, :guilabel:`Time Off`, and :guilabel:`Timesheets` for the employee.
-  Hover over any of the selections to reveal the :guilabel:`Internal Link` arrow. Click the
-  :guilabel:`Internal Link` arrow to open a form with the approver's :guilabel:`Name`,
-  :guilabel:`Email Address`, :guilabel:`Company`, :guilabel:`Phone`, :guilabel:`Mobile`, and
-  :guilabel:`Default Warehouse` fields. These can be modified, if needed. Use the breadcrumb menu to
-  navigate back to the new employee form when done.
-- :guilabel:`Homeworking`: Using the drop-down menu, select the specific location the employee will
-  work from, for each day of the week. The default options are :guilabel:`Home`, :guilabel:`Office`,
-  or :guilabel:`Other`. A new location can be typed into the field, then click either
-  :guilabel:`Create (new location)` to add the location, or :guilabel:`Create and edit...` to add
-  the new location and edit the form. After edits are done, click :guilabel:`Save & Close`, and the
-  new location is added, and populates the field. For days the employee does not work, for example,
-  Saturday and Sunday, leave the field blank (:guilabel:`Unspecified`).
+  approving an :guilabel:`Expense`, a :guilabel:`Time Off` request, :guilabel:`Timesheet` entries,
+  and :guilabel:`Attendance` records for the employee. Hover over any of the selections to reveal
+  the :guilabel:`Internal Link` arrow. Click the :guilabel:`Internal Link` arrow to open a form with
+  the approver's :guilabel:`Name`, :guilabel:`Email Address`, :guilabel:`Company`,
+  :guilabel:`Phone`, :guilabel:`Mobile`, and :guilabel:`Default Warehouse` fields. These can be
+  modified, if needed. Use the breadcrumb menu to navigate back to the new employee form when done.
+- :guilabel:`Remote Work`: using the drop-down menu, select the default location the employee works
+  from, for each day of the week. The default options are :guilabel:`Home`, :guilabel:`Office`, or
+  :guilabel:`Other`. A new location can be typed into the field, then click either :guilabel:`Create
+  (new location)` to add the location, or :guilabel:`Create and edit...` to add the new location and
+  edit the form. After edits are done, click :guilabel:`Save & Close`, and the new location is
+  added, and populates the field. For days the employee does not work, for example, Saturday and
+  Sunday, leave the field blank (:guilabel:`Unspecified`).
 
   .. note::
      It is also possible to add or modify work locations by navigating to :menuselection:`Employees
-     app --> Configuration --> Employee: Work Locations`. Click :guilabel:`New` to create a new
-     location, then enter the details on the form. To modify a location, click on an existing
-     location, then make any changes on the form.
+     app --> Configuration --> Employee: Work Locations`. To modify a location, click on an existing
+     location, then make any changes on the form. Click :guilabel:`New` to create a new location,
+     then enter the following information on the form. All fields are required.
 
-- :guilabel:`Schedule`: Select the :guilabel:`Working Hours` and :guilabel:`Timezone` for the
+     - :guilabel:`Work Location`: enter the name for the location. This can be as general or
+       granular as needed, such as `Home` or `Building 1, Second Floor`, respectfully.
+     - :guilabel:`Work Address`: using the drop-down menu, select the address for the location.
+     - :guilabel:`Cover Image`: click on the icon to select it for the :guilabel:`Cover Image`.
+       Options are a house icon, an office building icon, and a GPS location marker.
+     - :guilabel:`Company`: using the drop-down menu, select the company the location applies to.
+       The current company populates this field by default.
+
+     .. image:: new_employee/location.png
+        :align: center
+        :alt: A new work location form with all fields filled out.
+
+- :guilabel:`Schedule`: select the :guilabel:`Working Hours` and :guilabel:`Timezone` for the
   employee. The :guilabel:`Internal Link` arrow opens up a detailed view of the specific daily
   working hours. Working hours can be modified or deleted here.
 
   .. note::
      Working hours can also be modified in the *Payroll* application, where they are referred to as
      :guilabel:`Working Schedules`. For more information on how to create or modify
-     :guilabel:`Working Schedules` in Payroll, refer to the :doc:`../../hr/payroll` documentation.
+     :guilabel:`Working Schedules` in the *Payroll* application, refer to the
+     :doc:`../../hr/payroll` documentation.
 
-- :guilabel:`Planning`: Click on a role from the drop-down menu for both the :guilabel:`Roles` and
+- :guilabel:`Planning`: click on a role from the drop-down menu for both the :guilabel:`Roles` and
   the :guilabel:`Default Role` fields to add a role. There is no limit to the amount of
   :guilabel:`Roles` that can be selected for an employee, but there can only be one
   :guilabel:`Default Role`. The default role is the *typical* role that the employee performs, where
@@ -249,18 +270,18 @@ Information` tab to access this section, and enter the following information for
   :guilabel:`Default Role` is selected, that role is automatically added to the list of
   :guilabel:`Roles`.
 
-.. tip::
-   The :guilabel:`Planning` section affects the *Planning* app, and will only appear if the
-   *Planning* app is installed. When planning work in the *Planning* app, employees can only be
-   scheduled for specific work that corresponds to their selected roles. For example, only an
-   employee with a *Functional Tester* role can be assigned to perform any activity that requires a
-   *Functional Tester*.
+  .. tip::
+     The :guilabel:`Planning` section affects the *Planning* application, and will only appear if
+     the *Planning* application is installed. When planning work in the *Planning* application,
+     employees can only be scheduled for specific work that corresponds to their selected roles. For
+     example, only an employee with a *Forklift Operator* role can be assigned to perform any
+     activity that requires a *Forklift Operator*.
 
-.. important::
-   The users that appear in the drop-down menu for the :guilabel:`Approvers` section must have
-   *Administrator* rights set for the corresponding human resources role. To check who has these
-   rights, go to :menuselection:`Settings app --> Users --> → Manage Users`. Click on an employee,
-   and check the :guilabel:`Human Resources` section of the :guilabel:`Access Rights` tab.
+  .. important::
+     The users that appear in the drop-down menu for the :guilabel:`Approvers` section must have
+     *Administrator* rights set for the corresponding human resources role. To check who has these
+     rights, go to :menuselection:`Settings app --> Users --> → Manage Users`. Click on an employee,
+     and check the :guilabel:`Human Resources` section of the :guilabel:`Access Rights` tab.
 
    - In order for the user to appear as an approver for :guilabel:`Expenses`, they must have either
      :guilabel:`Team Approver`, :guilabel:`All Approver`, or :guilabel:`Administrator` set for the
@@ -271,21 +292,21 @@ Information` tab to access this section, and enter the following information for
      either :guilabel:`Manager`, :guilabel:`Officer`, or :guilabel:`Administrator` set for the
      :guilabel:`Payroll` role.
 
-.. note::
-   :guilabel:`Working Hours` are related to a company's working times, and an employee cannot have
-   working hours that are outside of a company's working times.
+  .. note::
+     :guilabel:`Working Hours` are related to a company's working schedules, and an employee cannot
+     have working hours that are outside of a company's working schedule.
 
-   Each individual working time is company-specific, so for multi-company databases, each company
-   needs to have its own working hours set.
+     Each individual working schedule is company-specific, so for multi-company databases, each
+     company needs to have its own working schedules set.
 
-   If an employee's working hours are not configured as a working time for the company, new working
-   times can be added, or existing working times can be modified. To add or modify a working time,
-   go to the :menuselection:`Payroll app --> Configuration --> Working Times`, and add a new working
-   time or edit an existing one.
+     If an employee's working hours are not configured as a working schedule for the company, new
+     working schedules can be added, or existing working schedules can be modified. To add or modify
+     a working schedule, go to the :menuselection:`Payroll app --> Configuration --> Working
+     Entries: Working Schedules`, and add a new working schedule or edit an existing one.
 
-   After the new working time is created, or an existing one is modified, select the employee's
-   working hours using the drop-down menu in the :guilabel:`Schedule` section of the
-   :guilabel:`Work Information` tab.
+     After the new working schedule is created, or an existing one is modified, select the
+     employee's working hours using the drop-down menu in the :guilabel:`Schedule` section of the
+     :guilabel:`Work Information` tab.
 
 Private Information tab
 -----------------------
@@ -295,54 +316,52 @@ however, some information in this section may be critical for the company's payr
 order to properly process payslips and ensure all deductions are accounted for, the employee's
 personal information should be entered.
 
-Here, the employee's :guilabel:`Private Contact`, :guilabel:`Education`, :guilabel:`Work Permit`,
-:guilabel:`Family Status`, :guilabel:`Emergency` contact, and :guilabel:`Citizenship` information is
+Here, the employee's :guilabel:`Private Contact`, :guilabel:`Family Status`, :guilabel:`Emergency`
+contact, :guilabel:`Education`, :guilabel:`Work Permit`, and :guilabel:`Citizenship` information is
 entered. Fields are entered either using a drop-down menu, activating a check box, or typing in the
 information.
 
-- :guilabel:`Private Contact`: Enter the personal :guilabel:`Address` for the employee. The
-  selection can be made with the drop-down menu. If the information is not available, type in the
-  name for the new address. To edit the new address, click the :guilabel:`Internal Link` arrow to
-  open the address form. On the address form, enter or edit the necessary details. Some other
-  information in the :guilabel:`Private Contact` section may auto-populate, if the address is
-  already listed in the drop-down menu.
-
-  Enter the employee's :guilabel:`Email` address and :guilabel:`Phone` number in the respective
-  fields. Next, enter the employee's :guilabel:`Bank Account Number` using the drop-down menu. If
-  the bank is not already configured (the typical situation when creating a new employee) enter the
-  bank account number, and click :guilabel:`Create and edit..`. A :guilabel:`Create Bank Account
-  Number` form loads. Fill in the information, then click :guilabel:`Save & Close`.
-
-  Then, select the employee's preferred :guilabel:`Language` from the drop-down menu. Next, enter
-  the :guilabel:`Home-Work Distance` in the field. This field is only necessary if the employee is
+- :guilabel:`Private Contact`: first, enter the :guilabel:`Private Address` for the employee. Next,
+  enter the employee's :guilabel:`Email` address and :guilabel:`Phone` number in the respective
+  fields. Then enter the employee's :guilabel:`Bank Account Number` using the drop-down menu. If the
+  bank is not already configured (the typical situation when creating a new employee) enter the bank
+  account number, and click :guilabel:`Create and edit..`. A :guilabel:`Create Bank Account Number`
+  form loads. Fill in the information, then click :guilabel:`Save & Close`. Next, select the
+  employee's preferred :guilabel:`Language` from the drop-down menu. Then enter the
+  :guilabel:`Home-Work Distance` in the field. This field is only necessary if the employee is
   receiving any type of commuter benefits. Lastly, enter the employee's license plate information in
   the :guilabel:`Private Car Plate` field.
-- :guilabel:`Education`: Select the highest level of education completed by the employee from the
-  :guilabel:`Certificate Level` drop-down menu. Options include :guilabel:`Graduate`,
-  :guilabel:`Bachelor`, :guilabel:`Master`, :guilabel:`Doctor`, or :guilabel:`Other`. Type in the
-  :guilabel:`Field of Study`, and the name of the :guilabel:`School` in the respective fields.
-- :guilabel:`Work Permit`: If the employee has a work permit, enter the information in this section.
-  Type in the :guilabel:`Visa No` (visa number) and/or :guilabel:`Work Permit No` (work permit
-  number) in the corresponding fields. Using the calendar selector, select the :guilabel:`Visa
-  Expire Date` and/or the :guilabel:`Work Permit Expiration Date` to enter the expiration date(s).
-  If available, upload a digital copy of the work permit document. Click :guilabel:`Upload Your
-  File`, navigate to the work permit file in the file explorer, and click :guilabel:`Open`.
-- :guilabel:`Family Status`: Select the current :guilabel:`Marital Status` using the drop-down menu,
+- :guilabel:`Family Status`: select the current :guilabel:`Marital Status` using the drop-down menu,
   either :guilabel:`Single`, :guilabel:`Married`, :guilabel:`Legal Cohabitant`, :guilabel:`Widower`,
   or :guilabel:`Divorced`. If the employee has any dependent children, enter the :guilabel:`Number
   of Dependent Children` in the field.
-- :guilabel:`Emergency`: Type in the :guilabel:`Contact Name` and :guilabel:`Contact Phone` number
+- :guilabel:`Emergency`: type in the :guilabel:`Contact Name` and :guilabel:`Contact Phone` number
   of the employee's emergency contact in the respective fields.
-- :guilabel:`Citizenship`: This section contains all the information relevant to the citizenship of
+- :guilabel:`Education`: select the highest level of education completed by the employee from the
+  :guilabel:`Certificate Level` drop-down menu. Default options include :guilabel:`Graduate`,
+  :guilabel:`Bachelor`, :guilabel:`Master`, :guilabel:`Doctor`, or :guilabel:`Other`. Type in the
+  :guilabel:`Field of Study`, and the name of the :guilabel:`School` in the respective fields.
+- :guilabel:`Work Permit`: if the employee has a work permit, enter the information in this section.
+  Type in the :guilabel:`Visa No` (visa number) and/or :guilabel:`Work Permit No` (work permit
+  number) in the corresponding fields. Using the calendar selector, select the :guilabel:`Visa
+  Expiration Date` and/or the :guilabel:`Work Permit Expiration Date` to enter the expiration
+  date(s). If available, upload a digital copy of the :guilabel:`Work Permit` document. Click
+  :guilabel:`Upload your file`, navigate to the work permit file in the file explorer, and click
+  :guilabel:`Open`.
+- :guilabel:`Citizenship`: this section contains all the information relevant to the citizenship of
   the employee. Some fields use a drop-down menu, as the :guilabel:`Nationality (Country)`,
   :guilabel:`Gender`, and :guilabel:`Country of Birth` fields do. The :guilabel:`Date of Birth` uses
   a calendar selector to select the date. First, click on the name of the month, then the year, to
   access the year ranges. Use the :guilabel:`< (left)` and :guilabel:`> (right)` arrow icons,
   navigate to the correct year range, and click on the year. Next, click on the month. Last, click
   on the day to select the date. Type in the information for the :guilabel:`Identification No`
-  (identification number, :guilabel:`Passport No` (passport number), and :guilabel:`Place of Birth`
+  (identification number), :guilabel:`Passport No` (passport number), and :guilabel:`Place of Birth`
   fields. Last, if the employee is not a resident of the country they are working in, activate the
   check box next to the :guilabel:`Non-resident` field.
+
+  .. note::
+     Depending on the localization setting, other fields may be present. For example, for the United
+     States, a :guilabel:`SSN No` (Social Security Number) field is present.
 
 .. _employees/hr-settings:
 
@@ -358,44 +377,43 @@ regardless.
   :guilabel:`Employee`, :guilabel:`Student`, :guilabel:`Trainee`, :guilabel:`Contractor`, or
   :guilabel:`Freelancer`.
 
-.. important::
-   Employees do not also need to be users. *Employees* do **not** count towards the Odoo
-   subscription billing, while *Users* **do** count towards billing. If the new employee should also
-   be a user, the user must be created. After the :guilabel:`User` is created and saved, the new
-   user will appear in the :guilabel:`Related User` field.
+  .. important::
+     Employees do not also need to be users. *Employees* do **not** count towards the Odoo
+     subscription billing, while *Users* **do** count towards billing. If the new employee should
+     also be a user, the user must be created. After the :guilabel:`User` is created and saved, the
+     new user will appear in the :guilabel:`Related User` field.
 
-   After the employee is created, create the user. Click the :guilabel:`⚙️ (gear)` icon, then click
-   :guilabel:`Create User`. A :guilabel:`Create User` form appears. Type in the :guilabel:`Name` and
-   :guilabel:`Email Address`, and then select the :guilabel:`Company` from the drop-down menu. Click
-   :guilabel:`Save` after the information is entered, and the employee record is automatically
-   updated with the newly created user populating the :guilabel:`Related User` field.
+     After the employee is created, create the user. Click the :guilabel:`⚙️ (gear)` icon, then
+     click :guilabel:`Create User`. A :guilabel:`Create User` form appears. Type in the
+     :guilabel:`Name` and :guilabel:`Email Address`. Next, select the :guilabel:`Company` from the
+     drop-down menu. Then, enter the :guilabel:`Phone` and :guilabel:`Mobile` numbers in the
+     respective fields. If a photo is available, click the :guilabel:`Edit` icon (which appears as a
+     :guilabel:`✏️ (pencil)` icon) in the lower left corner of the image box in the top right of the
+     form. A file explorer pops up. Navigate to the file, then click :guilabel:`Open` to select it.
+     Finally, click :guilabel:`Save` after all the information is entered, and the employee record
+     is automatically updated with the newly created user populating the :guilabel:`Related User`
+     field.
 
-   Users can also be created manually. For more information on how to manually add a user, refer to
-   the :doc:`../../general/users/manage_users` document.
+     Users can also be created manually. For more information on how to manually add a user, refer
+     to the :doc:`../../general/users/manage_users` document.
 
-- :guilabel:`Payroll`: If applicable, enter the :guilabel:`Registration Number of the Employee` in
-  this section. The :guilabel:`Attestation (N-1)` and :guilabel:`Attestation (N)` sections appear
-  only for Belgian companies, and will not be visible for other locations. These sections log the
-  days that will be paid to the new employee. Enter any :guilabel:`Amount to recover`,
-  :guilabel:`Number of days`, and :guilabel:`Recovered Amount` of :guilabel:`Holiday Attest (year) -
-  Simple Holiday Pay from previous employer to recover in (year)`, for both N and N-1 categories.
-  For the :guilabel:`Holiday Attest (year) - Previous occupation for Double Holiday Pay Recovery in
-  (year)` section, click :guilabel:`Add a line`, and enter the number of :guilabel:`Months`, the
-  :guilabel:`Amount`, and :guilabel:`Occupation Rate`. Repeat for all entries. Click the
-  :guilabel:`🗑️ (trash can)` icon to delete a line.
-- :guilabel:`SD WORX`: Enter the employee's seven digit :guilabel:`SDWorx code` in this field, if
-  applicable.
 - :guilabel:`Attendance/Point of Sale/Manufacturing`: The employee's :guilabel:`PIN Code` and
   :guilabel:`Badge ID` can be entered here, if the employee needs/has one. Click
   :guilabel:`Generate` next to the :guilabel:`Badge ID` to create a badge ID. The :guilabel:`PIN
   Code` is used to sign in and out of the *Attendance* app kiosk, and a :abbr:`POS (Point Of Sale)`
   system.
-- :guilabel:`Application Settings`: Enter the employee's :guilabel:`Hourly Cost` in a XX.XX format.
-  This is factored in when the employee is working at a :doc:`work center
-  <../../inventory_and_mrp/manufacturing/management/using_work_centers>`. This value affects the
-  manufacturing costs for a product, if the value of the manufactured product is not a fixed amount.
-  This value does not affect the *Payroll* application. If applicable, enter the :guilabel:`Fleet
-  Mobility Card` number.
+- :guilabel:`Payroll`: If applicable, enter the :guilabel:`Registration Number of the Employee` in
+  this section. Depending on the localization setting, the other items that appear in this field
+  vary based on location. In addition, other sections may appear in this tab based on location. It
+  is recommended to check with the payroll and/or accounting departments to ensure this section, as
+  well as any other sections relating to payroll that may appear, are filled in correctly.
+- :guilabel:`Application Settings`: Enter the employee's :guilabel:`Billing Time Target`. This only
+  affects the billing rate leader board in the *Timesheets* application. Next, enter the
+  :guilabel:`Hourly Cost` in a XX.XX format. This is factored in when the employee is working at a
+  :doc:`work center <../../inventory_and_mrp/manufacturing/management/using_work_centers>`. This
+  value affects the manufacturing costs for a product, if the value of the manufactured product is
+  not a fixed amount. This value does not affect the *Payroll* application. If applicable, enter the
+  :guilabel:`Fleet Mobility Card` number.
 
 .. image:: new_employee/hr-settings.png
    :align: center
